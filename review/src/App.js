@@ -6,7 +6,9 @@ const App = () => {
     const [person, setPerson] = useState("Joshhhhh");
     console.log("person context:", PersonContext);
     
-    return (<PersonContext.Provider value={personValue: {person, setPerson}}>
+    return (<PersonContext.Provider value={{
+        personValue: { person, setPerson }
+    }} >
         <Hello/>
     </PersonContext.Provider>);
 };
