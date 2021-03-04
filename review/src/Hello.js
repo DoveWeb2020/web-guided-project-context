@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { PersonContext } from './AppContextState';
 
 const Hello = () => {
   const [person, setPerson] = useState();
   console.log("person context:", PersonContext);
 
-  return (<PersonContext.Provider value={person}>
+  return (
     <h1>Hello, WEBPT24!</h1>
-  </PersonContext.Provider>);
+  );
 };
+
+export default Hello;
